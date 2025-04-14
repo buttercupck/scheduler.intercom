@@ -22,7 +22,8 @@ CREATE TABLE scheduling_preferences (
 -- Interpreters Table
 CREATE TABLE interpreters (
   id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+	last_name TEXT NOT NULL,
   email TEXT,
   phone TEXT,
   timezone TEXT DEFAULT 'PST',
