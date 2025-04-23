@@ -1,4 +1,5 @@
- import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
+import InterpreterProfile from './interpreterProfile'
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
@@ -9,9 +10,9 @@ function App() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Interpreter Scheduler</h1>
-      <p>Supabase connected and React is working!</p>
+      <InterpreterProfile />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
